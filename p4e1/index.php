@@ -1,5 +1,9 @@
 <?php
+// Pour créer une fonction, on utilise l'instruction «function» 
+// suivi du nom que l'on souhaite donner à cette fonction, suivi de 2 parenthèses qui sont les paramètres de notre fonction
 function bool(){
+  // Les instructions à éxécuter lors de l'appel de cette fonction seront placée entre deux accolades.
+  // Une fonction peut renvoyer une valeur. Pour cela, nous utilisons l'instruction «return», suivi de la variable à retourner.
   return true;
 }
 ?>
@@ -11,9 +15,6 @@ function bool(){
 </head>
 <body>
   <p>Faire une fonction qui retourne true.</p>
-  <!-- Les booléens (bool) permetent de stocker soit vrai soit faux.
-  Cela permet de retenir si une information est vraie ou fausse. On les utilise très fréquemment.
-  On écrit true pour vrai, et false pour faux. -->
   <p>On crée une fonction avec un type booléens qui affiche true : <?= bool(); ?></p>
 </body>
 </html>

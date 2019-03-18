@@ -1,7 +1,3 @@
-<?php
-$numberOne = 5;
-$numberTwo = 18;
-?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -16,15 +12,18 @@ $numberTwo = 18;
     <li>Les deux nombres sont identiques si les deux nombres sont égaux</li>
 </ul>
 <?php
-$compare = ($numberOne $numberTwo) {
-  if ($numberOne < $numberTwo) { ?>
+// je crée une fonction que j'appelle compareNumber dans ses paramètres j'initialise la variable numberOne et numberTwo
+function compareNumber($numberOne, $numberTwo) {
+  // je crée les conditions avec mes variables
+  if ($numberOne > $numberTwo) { ?>
     <p>Le premier nombre est plus grand</p>
-<?php } else if ($numberOne > $numberTwo) { ?>
+<?php } else if ($numberOne < $numberTwo) { ?>
   <p>Le premier nombre est plus petit</p>
 <?php } else if ($numberOne == $numberTwo){ ?>
   <p>Les deux nombres sont identiques </p>
 <?php }?>
 <?php }?>
-<p><?= $calcul ?></p>
+<!-- j'initialise mes deux variables avec des chiffres -->
+<p><?= compareNumber(12, 120); ?></p>
   </body>
 </html>
