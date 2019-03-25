@@ -8,10 +8,11 @@
     <p>Faire une fonction qui prend en paramètre trois nombres et qui renvoit la somme de ces nombres.</p>
     <p>Tous les paramètres doivent avoir une valeur par défaut.</p>
     <?php
-function calcul($numberOne, $numberTwo, $numberThree) {
+    // avec = 2 ou autres : les paramètres deviennent obtionnels
+function add($numberOne = 2, $numberTwo = 4, $numberThree = 8) {
   return $numberOne + $numberTwo + $numberThree;
 }
     ?>
-    <p>Résulat : <?= calcul(2, 4, 6) ?></p>
+    <p>Résulat : <?= add() ?></p>
   </body>
 </html>

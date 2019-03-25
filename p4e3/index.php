@@ -13,7 +13,7 @@ function displayConcat($stringOne, $stringTwo){
 </head>
 <body>
   <p>Faire une fonction qui prend en paramètre deux chaines de caractères et qui revoit la concaténation de ces deux chaines</p>
-<!-- j'appelle ma fonction displayConcat et je n'intialise de deux chaines de caractères -->
+  <!-- j'appelle ma fonction displayConcat et je n'intialise de deux chaines de caractères -->
   <p>on fait une concaténation de deux chaines de caractères : <?= displayConcat('salut ', 'toi'); ?></p>
 </body>
 </html>

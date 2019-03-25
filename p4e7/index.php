@@ -19,20 +19,21 @@
   </ul>
   <p>Gérer tous les cas.</p>
   <?php
-  function display($gender, $age){
-    if ($gender == 'homme' && $age > 18){
-      echo 'Vous êtes un homme et vous êtes majeur';
-    } else if ($gender == 'homme' && $age <= 18){
-      echo 'Vous êtes un homme et vous êtes mineur';
-    } else if ($gender == 'femme' && $age > 18){
-      echo 'Vous êtes une femme et vous êtes majeur';
-    } else if ($gender == 'homme' && $age <= 18){
-      echo 'Vous êtes une femme et vous êtes mineur';
-    } else{
-      echo 'Merci de rentrer un genre ou un âge correct';
+  function display($gender, $age) {
+    if ($gender == 'homme' && $age > 18) {
+      $message = 'Vous êtes un homme et vous êtes majeur';
+    } else if ($gender == 'homme' && $age <= 18) {
+      $message = 'Vous êtes un homme et vous êtes mineur';
+    } else if ($gender == 'femme' && $age > 18) {
+      $message = 'Vous êtes une femme et vous êtes majeur';
+    } else if ($gender == 'femme' && $age <= 18) {
+      $message = 'Vous êtes une femme et vous êtes mineur';
+    } else {
+      $message = 'Merci de rentrer un genre ou un âge correct';
     }
+    return $message;
   }
   ?>
-  <p>reponse : <?= display('homme', 2)?></p>
+  <p>réponse : <?= display('homme', 2)?></p>
 </body>
 </html>

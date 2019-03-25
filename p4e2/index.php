@@ -1,8 +1,8 @@
 <?php
 // Pour créer une fonction, on utilise l'instruction «function»
 // suivi du nom que l'on souhaite donner à cette fonction, suivi de 2 parenthèses qui sont les paramètres de notre fonction
-function string(){
-return 'salut';
+function display($string){
+return $string;
 }
 
 ?>
@@ -16,6 +16,6 @@ return 'salut';
   <p>Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine.</p>
   <!-- Les chaînes de caractères (string) sont le nom informatique qu'on donne au texte. Tout texte est appelé chaîne de caractères.
   En PHP, ce type de données a un nom :string. On peut stocker des textes courts comme très longs au besoin. -->
-  <p>Message :  <?= string(); ?></p>
+  <p>Message :  <?= display('salut'); ?></p>
 </body>
 </html>
